@@ -6,7 +6,7 @@
 /*   By: ataboada <ataboada@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/15 11:14:54 by ataboada          #+#    #+#             */
-/*   Updated: 2023/06/22 16:30:10 by ataboada         ###   ########.fr       */
+/*   Updated: 2023/07/03 15:23:09 by ataboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ int	main(int argc, char **argv)
 	ft_render_xpm(&data);
 	ft_render_map(&data);
 	data.plr.to_collect = data.map.n_collectibles;
-	mlx_hook(data.mlx.win, E_KEYPR, M_KEYPR, ft_keypress, &data);
-	mlx_hook(data.mlx.win, E_CLOSE, M_CLOSE, ft_close_win, &data);
+	mlx_hook(data.mlx.win, 2, 1L << 0, ft_keypress, &data);
+	mlx_hook(data.mlx.win, 17, 1L << 17, ft_close_win, &data);
 	mlx_loop(data.mlx.mlx);
 }
 

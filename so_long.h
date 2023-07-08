@@ -6,20 +6,20 @@
 /*   By: ataboada <ataboada@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/15 11:16:17 by ataboada          #+#    #+#             */
-/*   Updated: 2023/06/21 09:58:46 by ataboada         ###   ########.fr       */
+/*   Updated: 2023/07/03 15:22:48 by ataboada         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SO_LONG_H
 # define SO_LONG_H
 
-#include "libft/libft.h"
-#include "minilibx-linux/mlx.h"
+# include "libft/libft.h"
+# include "minilibx-linux/mlx.h"
 
-#include <fcntl.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
+# include <fcntl.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <stdio.h>
 
 # define SIZE		50
 
@@ -28,11 +28,6 @@
 # define DOWN		65364
 # define LEFT		65361
 # define RIGHT		65363
-
-# define E_KEYPR	2
-# define E_CLOSE	17
-# define M_KEYPR	1L<<0
-# define M_CLOSE	1L<<17
 
 # define PATH_W		"textures/wall.xpm"
 # define PATH_P		"textures/player.xpm"
